@@ -35,7 +35,7 @@ const Shop = () => {
          const exists = cart.find(pd => pd.id === product.id);
          if (!exists) {
              product.quantity = 1;
-             newCart = [...newCart, product];
+             newCart = [...cart, product];
          }
          else {
              exists.quantity = exists.quantity + 1;
