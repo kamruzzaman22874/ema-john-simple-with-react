@@ -45,12 +45,13 @@ const Login = () => {
 						required
 					/>
 				</div>
-				<p onClick={() => setShow(!show)}>
-					{' '}
-					<small>
-						{show ? <span>Hide password</span> : <span>Show password</span>}
-					</small>{' '}
-				</p>
+				<button>
+					<p onClick={() => setShow(!show)}>
+						<small>
+							{show ? <span>Hide</span> : <span>Show</span>}
+						</small>
+					</p>
+				</button>
 				<input className='btn-submit' type='submit' value='Login' />
 			</form>
 			<p className=''>
